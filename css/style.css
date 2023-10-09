@@ -110,5 +110,15 @@
 /* Home Page */
 
 body{
-    background-color: #303030;
+    background-color: #444;
+}
+
+.about{
+  background-color: rgb(45, 107, 107);
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+  color: white;
 }
