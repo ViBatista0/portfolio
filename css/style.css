@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'New Tegomin', serif;
+  font-family: "New Tegomin", serif;
 }
 
 #loading-body {
@@ -109,16 +109,166 @@
 
 /* Home Page */
 
-body{
-    background-color: #444;
+body {
+  background-color: #444;
+  overflow-x: hidden;
 }
 
-.about{
-  background-color: rgb(45, 107, 107);
+.about {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  color: white;
+  z-index: 1;
 }
 
-*{
+.txt-about {
+  width: 45%;
+  height: 40%;
+  font-size: 32px;
+  position: absolute;
+  right: 3%;
+  top: 35%;
+}
+
+.txt-about span {
+  font-size: 40px;
+}
+
+.icons {
+  width: 8%;
+  position: absolute;
+  right: 3%;
+  top: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+#astro {
+  position: absolute;
+  right: 10%;
+}
+
+#nave {
+  position: fixed;
+  top: 45%;
+  left: 18%;
+  z-index: 50;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Projects */
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+  background-color: #444;
+  display: flex;
+  position: relative;
+}
+
+.project-container {
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.project-container h2,
+.end-chave {
+  display: inline-block;
+  font-size: 96px;
+  margin-left: -30px;
+}
+
+.end-chave {
+  margin-left: -10px !important;
+}
+
+.project-title {
+  position: absolute;
+  left: 5%;
+  top: 9%;
+  font-size: 32px;
+  height: 60px;
+}
+
+.project-preview {
+  background-color: #242424;
+  width: 100%;
+  height: 80%;
+  border: 4px solid rgb(0, 255, 64);
+}
+
+.project-header {
+  width: 100%;
+  height: 50%;
+  background-color: cornsilk;
+  background: url(../img/brawl.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.project-header:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.preview-body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.tech-icons-container {
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  margin: 3.5% 1%;
+  width: 30%;
+  height: 60%;
+}
+
+.tech-icons-container img{
+  width: 80px;
+  height: 80px;
+}
+
+.details-btn {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 20%;
+  height: 30%;
+  border-radius: 15px;
+  border: 1px solid #716C6C;
+  font-size: 24px;
+  background-color: transparent;
   color: white;
 }
