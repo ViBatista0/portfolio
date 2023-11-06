@@ -157,9 +157,11 @@ body {
 
 #nave {
   position: fixed;
+  width: 10%;
   top: 45%;
   left: 18%;
   z-index: 50;
+  transform: rotateY('180');
 }
 
 ::-webkit-scrollbar {
@@ -201,6 +203,7 @@ body {
 
 .project-container h2,
 .end-chave {
+  color: #fcfcfc;
   display: inline-block;
   font-size: 96px;
   margin-left: -30px;
@@ -211,6 +214,7 @@ body {
 }
 
 .project-title {
+  color: #fcfcfc;
   position: absolute;
   left: 5%;
   top: 9%;
@@ -222,7 +226,7 @@ body {
   background-color: #242424;
   width: 100%;
   height: 80%;
-  border: 4px solid rgb(0, 255, 64);
+  border: 4px solid rgb(141, 141, 141);
 }
 
 .project-header {
@@ -271,4 +275,35 @@ body {
   font-size: 24px;
   background-color: transparent;
   color: white;
+  transition: 0.5s ease-in;
+}
+
+.details-btn:hover{
+  cursor: pointer;
+  background-color: #444;
+}
+
+/* Project Details */
+
+.container-details{
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.background-img{
+  background: url(../img/brawl.png);
+  width: 40%;
+  height: 100%;
+  background-color: palevioletred;
+}
+
+.details{
+  position: fixed;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  /* border-radius: 10px 0 0 10px; */
+  background-color: #444;
 }
